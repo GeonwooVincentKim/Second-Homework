@@ -165,37 +165,37 @@ class _DiscoverState extends State<Discover>{
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: SideMenu(),
-      appBar: AppBar(
-        backgroundColor: Colors.black87,
-        title: Text("DISCOVER"),
-        centerTitle: true,
-      ),
-      // body: Body(),
-      body: IndexedStack(
-        index: _selectedPage,
-        children: pageList,
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedPage,
-        backgroundColor: Colors.black87,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white,
-        onTap: _onItemTapped,
-        iconSize: 50,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(IconMoon.igamepad),
-            title: Text('My Games'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(IconMoon.isearch),
-            title: Text('Discover'),
-          ),
-        ],
-        //currentIndex: _selectedIndex,
-        // selectedFontSize: 15,
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.black87,
+      //   title: Text("DISCOVER"),
+      //   centerTitle: true,
+      // ),
+      body: DiscoverBody(),
+      // body: IndexedStack(
+      //   index: _selectedPage,
+      //   children: pageList,
+      // ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: _selectedPage,
+      //   backgroundColor: Colors.black87,
+      //   type: BottomNavigationBarType.fixed,
+      //   selectedItemColor: Colors.white,
+      //   unselectedItemColor: Colors.white,
+      //   onTap: _onItemTapped,
+      //   iconSize: 50,
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(IconMoon.igamepad),
+      //       title: Text('My Games'),
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(IconMoon.isearch),
+      //       title: Text('Discover'),
+      //     ),
+      //   ],
+      //   //currentIndex: _selectedIndex,
+      //   // selectedFontSize: 15,
+      // ),
       // body: Body_Divide_Test(),
     );
   }
