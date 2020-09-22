@@ -57,25 +57,38 @@ class _HomeState extends State<Home>{
       //     },
       //   ),
       // ),
-      // body: PageView(
-      //   pageSnapping: true,
-      //   // controller: controller,
-      //   scrollDirection: Axis.horizontal,
+      // body: IndexedStack(
+      //   index: _selectedPage,
       //   children: [
-      //     Body(),
-      //     DiscoverPage(),
-      //     // Container(color: Colors.indigo),
-      //     // Container(color: Colors.red,),
-      //     IndexedStack(
-      //       index: _selectedPage,
-      //       children: pageList,
+      //     PageView(
+      //       pageSnapping: true,
+      //       scrollDirection: Axis.horizontal,
+      //       children: [
+      //         Body(),
+      //         DiscoverPage(),
+      //       ]
       //     ),
       //   ],
       // ),
-      body: IndexedStack(
-        index: _selectedPage,
-        children: pageList,
+      body: PageView(
+        pageSnapping: true,
+        // controller: controller,
+        scrollDirection: Axis.horizontal,
+        children: [
+          Body(),
+          DiscoverPage(),
+          // Container(color: Colors.indigo),
+          // Container(color: Colors.red,),
+          IndexedStack(
+            index: _selectedPage,
+            children: pageList,
+          ),
+        ],
       ),
+      // body: IndexedStack(
+      //   index: _selectedPage,
+      //   children: pageList,
+      // ),
       bottomNavigationBar: BottomNavigationBar(
 
         type: BottomNavigationBarType.fixed,
