@@ -25,4 +25,5 @@ samples, guidance on mobile development, and a full API reference.
 - [Clipping-Dismissible](https://github.com/flutter/flutter/issues/56812)
 - [Dismissible-Widget-Border](https://stackoverflow.com/questions/57542470/how-to-fix-this-dismissible-widget-border)
 - [Dismissible-ListView](https://medium.com/@maffan/how-to-make-a-dismissible-listview-in-flutter-a9f730a751be)
-
+- [Flutter how to get last PageView scroll direction](https://stackoverflow.com/questions/52203527/flutter-how-to-get-last-pageview-scroll-direction)
+- [How to get from index in PageView onPageChanged in Flutter?](https://stackoverflow.com/questions/55381980/how-to-get-from-index-in-pageview-onpagechanged-in-flutter)

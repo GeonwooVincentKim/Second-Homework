@@ -150,7 +150,7 @@ class _BodyState extends State<Body>{
         alignment: Alignment.topLeft,
         color: Colors.black12,
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           // padding: EdgeInsets.only(left: 10.0, top: 20.0, right: 10.0),
 
           child: SingleChildScrollView(

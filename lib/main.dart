@@ -7,10 +7,10 @@ void main(){
       MaterialApp(
         title: "My Flutter App",
         home: Home(),
-        // routes: {
-        //   '/home': (context) => Home(),
-        //   '/discover': (context) => Discover(),
-        // },
+        routes: {
+          '/home': (context) => Home(),
+          '/discover': (context) => Discover(),
+        },
       ),
   );
 }

@@ -14,7 +14,8 @@ class Discover extends StatefulWidget{
 }
 
 class _DiscoverState extends State<Discover>{
-  int _selectedPage = 0;
+  String _title;
+  int _selectedPage = 1;
   List<Widget> pageList = List<Widget>();
   int _currentIndex = 0;
 
@@ -22,6 +23,7 @@ class _DiscoverState extends State<Discover>{
   void initState() {
     pageList.add(Body());
     pageList.add(DiscoverPage());
+    _title = "DISCOVER"; // This should be block when we use IndexedStack only.
     super.initState();
   }
 
@@ -29,6 +31,13 @@ class _DiscoverState extends State<Discover>{
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: SideMenu(),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.black87,
+      //   // : Text("MY GAMES"),
+      //   title: Text(_title),
+      //   // title: Text(widget.title),
+      //   centerTitle: true,
+      // ),
       body: DiscoverBody(),
     );
   }

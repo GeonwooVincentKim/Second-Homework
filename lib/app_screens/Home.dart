@@ -70,25 +70,28 @@ class _HomeState extends State<Home>{
       //     ),
       //   ],
       // ),
-      body: PageView(
-        pageSnapping: true,
-        // controller: controller,
-        scrollDirection: Axis.horizontal,
-        children: [
-          Body(),
-          DiscoverPage(),
-          // Container(color: Colors.indigo),
-          // Container(color: Colors.red,),
-          IndexedStack(
-            index: _selectedPage,
-            children: pageList,
-          ),
-        ],
-      ),
-      // body: IndexedStack(
-      //   index: _selectedPage,
-      //   children: pageList,
+      // Trying to New-way, keep trying..
+      // body: PageView(
+      //   pageSnapping: true,
+      //   // controller: controller,
+      //   scrollDirection: Axis.horizontal,
+      //   children: [
+      //     Body(),
+      //     DiscoverPage(),
+      //     // Container(color: Colors.indigo),
+      //     // Container(color: Colors.red,),
+      //     // IndexedStack(
+      //     //   index: _selectedPage,
+      //     //   children: pageList,
+      //     // ),
+      //   ],
       // ),
+
+      // Original Way(Just use IndexedStack)
+      body: IndexedStack(
+        index: _selectedPage,
+        children: pageList,
+      ),
       bottomNavigationBar: BottomNavigationBar(
 
         type: BottomNavigationBarType.fixed,
@@ -119,13 +122,13 @@ class _HomeState extends State<Home>{
       _selectedPage = index;
       switch(index){
         case 0: {
-          // Navigator.pushNamed(context, '/home');
-          _title="Hello World";
+          //Navigator.pushNamed(context, '/home');
+          _title="MY GAMES";
           break;
         }
         case 1:{
           // Navigator.pushNamed(context, '/discover');
-          _title="Your world";
+          _title="DISCOVER";
           break;
         }
       }
